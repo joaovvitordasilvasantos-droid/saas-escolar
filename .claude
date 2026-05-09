@@ -1,0 +1,46 @@
+# SKILL: Execução de Tarefas no Projeto Lumina
+
+## REGRA PRINCIPAL
+Sempre execute UMA tarefa por vez.
+Nunca agrupe múltiplas tarefas em um único prompt.
+
+## ANTES DE QUALQUER TAREFA
+1. Leia o arquivo alvo completamente
+2. Confirme que entendeu o que deve ser feito
+3. Execute apenas o que foi pedido
+
+## IDENTIDADE VISUAL — NUNCA ALTERAR
+- Navy principal: #1A3C6E
+- Âmbar acento: #F59E0B
+- Teal sucesso: #0FA77B
+- Fundo: #F8FAFF
+- Cards: #FFFFFF
+- Bordas: #E2E8F0
+- Border-radius padrão: 12px
+
+## COMPONENTES JÁ EXISTENTES — SEMPRE REUTILIZAR
+- AIReportCard.jsx → para exibir respostas da IA
+- AILoading.jsx → para loading de chamadas IA
+- Layout.jsx → wrapper de todas as páginas
+- Sidebar.jsx → menu lateral
+- TopBar.jsx → barra superior
+
+## PADRÃO DE CÓDIGO
+- Sempre usar useState para estado local
+- Sempre usar o componente Layout existente
+- Sempre manter lógica existente intacta
+- Nunca remover funcionalidades existentes
+- Sempre adicionar loading em chamadas à API
+- Modelo IA: claude-sonnet-4-5
+
+## APÓS CADA TAREFA
+1. Confirme o que foi alterado
+2. Liste os arquivos editados
+3. Informe quantas linhas foram adicionadas/removidas
+4. Pergunte se pode avançar para a próxima tarefa
+
+## ESTRUTURA DO PROJETO
+- src/pages/ → páginas principais
+- src/components/ → componentes reutilizáveis
+- src/context/ → DataContext e AuthContext
+- src/config/ → configurações e constantes
