@@ -72,8 +72,8 @@ export default function Configuracoes() {
             {[
               { icon: 'check_circle', label: 'Gestão de alunos, turmas e professores', ok: true },
               { icon: 'check_circle', label: 'Notas, frequência e portfólio', ok: true },
-              { icon: 'check_circle', label: 'Relatórios IA e Lumina Predict', ok: true },
-              { icon: 'check_circle', label: 'Lumina Coach e Boletim Inteligente', ok: true },
+              { icon: 'check_circle', label: 'Relatórios inteligentes e análises de desempenho', ok: true },
+              { icon: 'check_circle', label: 'Assistente pedagógico e boletim inteligente', ok: true },
               { icon: 'check_circle', label: 'Módulo Financeiro completo', ok: true },
               { icon: 'radio_button_unchecked', label: 'Multi-escola (disponível no Institucional)', ok: false },
               { icon: 'radio_button_unchecked', label: 'API personalizada e integrações', ok: false },

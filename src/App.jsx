@@ -9,7 +9,7 @@ import Turmas from './pages/Turmas';
 import Alunos from './pages/Alunos';
 import Professores from './pages/Professores';
 import Configuracoes from './pages/Configuracoes';
-import Placeholder from './pages/Placeholder';
+import Suporte from './pages/Suporte';
 
 // Telas existentes
 import NotasFrequencia from './pages/NotasFrequencia';
@@ -67,8 +67,8 @@ export default function App() {
               <Route path="financeiro" element={<Financeiro />} />
               <Route path="desempenho" element={<Desempenho />} />
 
-              <Route path="configuracoes" element={<Configuracoes />} />
-              <Route path="suporte" element={<Placeholder title="Suporte" />} />
+              <Route path="configuracoes" element={<AdminRoute><Configuracoes /></AdminRoute>} />
+              <Route path="suporte" element={<Suporte />} />
             </Route>
 
             {/* Redirecionamento Global */}

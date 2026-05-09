@@ -116,23 +116,25 @@ export default function Sidebar() {
 
       {/* Footer Nav */}
       <div className="px-3 pb-4 pt-2 space-y-0.5 border-t border-white/10">
-        <NavLink
-          to="/configuracoes"
-          className={({ isActive }) =>
-            `px-4 py-3 flex items-center gap-3 rounded-xl transition-all duration-200 active:scale-95 group ${
-              isActive
-                ? 'bg-white text-[#1A3C6E] font-bold shadow-sm'
-                : 'text-white/70 hover:text-white hover:bg-white/10'
-            }`
-          }
-        >
-          {({ isActive }) => (
-            <>
-              <span className="material-symbols-outlined text-[20px] transition-transform group-hover:rotate-12" style={{ color: isActive ? '#1A3C6E' : undefined }}>settings</span>
-              <span className="font-outfit text-sm">Configurações</span>
-            </>
-          )}
-        </NavLink>
+        {isAdmin && (
+          <NavLink
+            to="/configuracoes"
+            className={({ isActive }) =>
+              `px-4 py-3 flex items-center gap-3 rounded-xl transition-all duration-200 active:scale-95 group ${
+                isActive
+                  ? 'bg-white text-[#1A3C6E] font-bold shadow-sm'
+                  : 'text-white/70 hover:text-white hover:bg-white/10'
+              }`
+            }
+          >
+            {({ isActive }) => (
+              <>
+                <span className="material-symbols-outlined text-[20px] transition-transform group-hover:rotate-12" style={{ color: isActive ? '#1A3C6E' : undefined }}>settings</span>
+                <span className="font-outfit text-sm">Configurações</span>
+              </>
+            )}
+          </NavLink>
+        )}
         <NavLink
           to="/suporte"
           className={({ isActive }) =>
