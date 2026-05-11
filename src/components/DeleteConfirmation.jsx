@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function DeleteConfirmation({ isOpen, onConfirm, onCancel, title = "Confirmar Exclusão", message = "Tem certeza que deseja excluir este item? Esta ação não pode ser desfeita.", loading = false }) {
   if (!isOpen) return null;
 

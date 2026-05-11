@@ -1,7 +1,7 @@
 import { useData } from '../context/DataContext';
 
 export default function Coordenacao() {
-  const { alunos, turmas, notas, reports } = useData();
+  const { alunos, notas, reports } = useData();
 
   // Calcular alunos em atenção
   const alunosEmAtencao = alunos.map(aluno => {

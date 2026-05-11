@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect } from 'react';
+import { createContext, useContext, useState, useEffect } from 'react';
 import dadosTeste from '../data/dadosTeste';
 
 const DataContext = createContext();
@@ -37,7 +37,7 @@ const fromStorage = (key, fallback) => {
   try {
     const raw = localStorage.getItem(key);
     if (raw && raw !== '[]' && raw !== 'null') return JSON.parse(raw);
-  } catch (_) { /* ignora erro de parse */ }
+  } catch { /* ignora erro de parse */ }
   return fallback;
 };
 
