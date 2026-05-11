@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function Placeholder({ title }) {
   return (
     <div className="flex flex-col items-center justify-center h-[calc(100vh-12rem)] bg-surface-container-lowest border border-outline-variant rounded-xl border-dashed">

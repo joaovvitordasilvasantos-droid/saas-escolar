@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { useData } from '../context/DataContext';
 import DeleteConfirmation from '../components/DeleteConfirmation';

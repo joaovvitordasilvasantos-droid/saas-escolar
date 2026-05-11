@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useData } from '../context/DataContext';
 import DeleteConfirmation from '../components/DeleteConfirmation';
 
