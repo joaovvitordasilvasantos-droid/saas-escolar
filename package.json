@@ -5,8 +5,6 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "server": "node --env-file=.env server.js",
-    "dev:full": "concurrently \"npm run dev\" \"npm run server\"",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
@@ -24,7 +22,6 @@
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.1",
     "autoprefixer": "^10.5.0",
-    "concurrently": "^9.2.1",
     "cors": "^2.8.6",
     "eslint": "^10.2.1",
     "eslint-plugin-react-hooks": "^7.1.1",

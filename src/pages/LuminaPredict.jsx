@@ -5,7 +5,7 @@ import AIReportCard, { AILoading } from '../components/AIReportCard';
 const PERIODOS = ['1º Bimestre', '2º Bimestre', '3º Bimestre', 'Ano completo'];
 
 function callAnthropicAPI(prompt) {
-  return fetch('http://localhost:3001/api/ai', {
+  return fetch('/api/ai', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({

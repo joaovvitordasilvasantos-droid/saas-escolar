@@ -49,7 +49,7 @@ Dados do aluno para contexto:
 - Atividades entregues: ${entregues} de ${atividadesAluno.length}`;
 
     try {
-      const response = await fetch('http://localhost:3001/api/ai', {
+      const response = await fetch('/api/ai', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
